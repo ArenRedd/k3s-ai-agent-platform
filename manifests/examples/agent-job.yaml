@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: agent-example
+  namespace: general
+spec:
+  template:
+    spec:
+      nodeSelector:
+        role: general
+      dnsPolicy: None
+      dns:
+        - 8.8.8.8
+        - 1.1.1.1
+      containers:
+      - name: agent
+        image: docker.io/astral/sh:latest
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+      restartPolicy: Never

@@ -1,0 +1,23 @@
+# kubeconfig and env files
+kubeconfig*
+*.kubeconfig
+.env
+*.env
+*secret*.yaml
+*.pem
+*.key
+
+# etcd snapshots
+*.tgz
+*.db
+*.sqlite
+
+# k3s cluster directory
+~/.k3s-cluster/
+
+# OS generated
+node_modules
+.DS_Store
+
+# k3s backups (local)
+k3s-backups/

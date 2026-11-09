@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+  labels:
+    purpose: observability
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: agents-sandbox
+  labels:
+    purpose: sandbox
+    networkpolicy: deny-all
