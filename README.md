@@ -148,7 +148,7 @@ See [docs/security.md](docs/security.md) for Tailscale-only access, deny-all san
 ## License and Author
 **MIT License** © 2026 **Anandram Mohan**
 
-For questions, contact: arenredd@example.com
+For questions, contact: hello@anandram.me
 
 ---
 *This project was built by running exact commands in a documented operator runbook. No hype, no emojis beyond badges, and all design decisions are explicitly trade-offs.*
